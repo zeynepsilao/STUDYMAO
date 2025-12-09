@@ -15,7 +15,7 @@
 /* Resim Izgarası (Grid) */
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ekrana göre otomatik sığdırır */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ekrana göre otomatik sığdıms */
     gap: 20px;
     padding: 40px;
     max-width: 1200px;
@@ -32,7 +32,7 @@
 }
 
 .gallery-item:hover {
-    transform: scale(1.03); /* Üstüne gelince hafif büyüsün */
+    transform: scale(1.03); /* Üstüne gelince hafif büyü */
     border-color: var(--pink);
 }
 
@@ -41,7 +41,7 @@
     height: 100%;
     object-fit: cover; /* Resmi kutuya sığdır */
     display: block;
-    height: 250px; /* Tüm resimler eşit boyda olsun */
+    height: 250px; /* Tüm resimler eşit boyda */
 }
 
 /* LIGHTBOX (BÜYÜK RESİM EKRANI) */
@@ -62,7 +62,7 @@
     max-width: 90%;
     max-height: 80%;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 172, 172, 0.5); /* Şeftali rengi parlama */
+    box-shadow: 0 0 20px rgba(255, 172, 172, 0.5); /* parlama */
     animation: zoomIn 0.3s; /* Açılış animasyonu */
 }
 
