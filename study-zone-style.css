@@ -1,6 +1,6 @@
 body {
     background-color: #FFACAC !important; 
-    background-image: url('images/sm_bg.jpg'); /* Resim yolunu kontrol et */
+    background-image: url('images/sm_bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-/* --- LOGO & LOGIN STYLES --- */
+/* LOGO and LOGIN STYLES */
 .main-logo {
     text-align: center;
     margin-bottom: 20px;
@@ -103,9 +103,9 @@ body {
     opacity: 1;
 }
 
-/* --- DASHBOARD (PANEL) PAGE --- */
+/* DASHBOARD */
 .dashboard-page {
-    background-image: url('images/gecici_arkaplan.jpg'); /* Resim yolunu kontrol et */
+    background-image: url('images/gecici_arkaplan.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ body {
     text-shadow: 2px 2px 4px black;
 }
 
-/* --- POP-UP AND DESK --- */
+/*  POPUP AND DESK  */
 .popup-overlay {
     position: fixed;
     top: 0; 
@@ -175,7 +175,7 @@ body {
     justify-content: space-between;
 }
 
-/* --- SIDE MENU --- */
+/*  SIDE MENU  */
 .menu-toggle-btn {
     position: absolute;
     top: 20px;
@@ -234,7 +234,7 @@ body {
     color: #888;
 }
 
-/* --- APP LIST --- */
+/* APP LIST  */
 .app-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -259,7 +259,7 @@ body {
     border-color: #ff6b81;
 }
 
-/* --- WIDGET (GENEL PENCERE) STİLİ --- */
+/* WIDGET */
 .desk-widget {
     position: absolute;
     top: 20%;
@@ -302,7 +302,7 @@ body {
     color: red;
 }
 
-/* --- POMODORO --- */
+/* POMODORO */
 .timer-display {
     font-size: 3rem;
     color: #555;
@@ -322,7 +322,7 @@ body {
     margin: 0 5px;
 }
 
-/* --- CALCULATOR --- */
+/* CALCULATOR */
 #calc-widget {
     width: 220px;
     top: 20%;
@@ -368,7 +368,7 @@ body {
 .red { background: #ffcccc !important; color: red !important; }
 .green { background: #ccffcc !important; color: green !important; }
 
-/* --- NOTES --- */
+/* NOTES */
 #notes-widget {
     width: 250px;
     top: 20%;
@@ -408,7 +408,7 @@ body {
     padding-top: 5px;
 }
 
-/* --- TO-DO LIST --- */
+/* TO-DO LIST */
 #todo-widget {
     width: 350px;
     height: 450px;
@@ -482,7 +482,7 @@ body {
     transform: scale(1.2);
 }
 
-/* --- PHOTO WIDGET --- */
+/* PHOTO WIDGET */
 #photo-widget {
     width: 300px;
     height: 350px;
@@ -532,36 +532,31 @@ body {
     z-index: 10;
 }
 
-/* --- SADECE BU SAYFAYA ÖZEL KONUMLANDIRMA --- */
+/* TOP MENU POSITIONING */
 
 .dashboard-page .navbar {
-    /* 1. KONUMLANDIRMA */
-    position: absolute;   /* Sayfa akışından bağımsız olsun */
+    /* positioning */
+    position: absolute;
     top: 0;
     left: 350px;  
     
-    /* 2. BOYUT */
-    width: fit-content;   /* İçindeki yazılar kadar yer kapla */
+    /* size */
+    width: fit-content;   
     height: 60px;
     padding: 0 30px;
 
-    /* 3. GÖRÜNÜM */
     background-color: #381a42; /* Koyu mor */
-    
-    /* Eğer kenardan uzaklaştırdıysan, sol köşeyi de yuvarlamak daha şık durabilir */
-    border-radius: 0 0 20px 20px; /* Sadece alt köşeleri yuvarlar */
-    /* İstersen tamamen yuvarlak yapmak için: border-radius: 30px; yapabilirsin */
+    border-radius: 0 0 20px 20px; 
     
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     z-index: 1000;
     
-    /* İçerik Düzeni */
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* Linklerin Fontu */
+/* Link Font */
 .dashboard-page .nav-links a {
     color: white; 
     font-family: 'Chewy', cursive;
@@ -572,7 +567,7 @@ body {
     color: #ffb7c5;
 }
 
-/* Dropdown Ayarı */
+/* Dropdown */
 .dashboard-page .dropdown-content {
     background-color: #5D2F77;
     border-radius: 15px;
