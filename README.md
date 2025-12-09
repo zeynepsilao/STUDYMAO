@@ -8,13 +8,13 @@
 
 This dashboard includes several interactive, draggable widgets:
 
-* ** Pomodoro Timer:** A simple 25-minute focus timer to manage study sessions.
-* ** To-Do List:** Add tasks, mark them as completed, or delete them. Keeps you organized.
-* ** Quick Notes:** A notepad with a built-in word counter. Expands automatically as you type.
-* ** Calculator:** A handy calculator for quick math problems.
-* ** Photo Frame:** Upload a motivation photo or a memory, and resize it on your desk.
-* ** Draggable Interface:** All widgets can be dragged and positioned anywhere on the screen.
-* ** Responsive Sidebar:** A glassmorphism-style sidebar to toggle apps on and off.
+* **Pomodoro Timer:** A simple 25-minute focus timer to manage study sessions.
+* **To-Do List:** Add tasks, mark them as completed, or delete them. Keeps you organized.
+* **Quick Notes:** A notepad with a built-in word counter. Expands automatically as you type.
+* **Calculator:** A handy calculator for quick math problems.
+* **Photo Frame:** Upload a motivation photo or a memory, and resize it on your desk.
+* **Draggable Interface:** All widgets can be dragged and positioned anywhere on the screen.
+* **Responsive Sidebar:** A glassmorphism-style sidebar to toggle apps on and off.
 
 ## Technologies Used
 
