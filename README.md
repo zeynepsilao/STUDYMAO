@@ -18,8 +18,8 @@ This dashboard includes several interactive, draggable widgets:
 
 ## Technologies Used
 
-* **HTML5**
-* **CSS3** 
+* **HTML**
+* **CSS** 
 * **JavaScript** 
 
 ## How to Run
