@@ -1,11 +1,11 @@
-/* COLOR VARIABLES (Based on your palette) */
+/* COLOR VARIABLES */
 :root {
     --dark-purple: #3E1E68;
     --purple: #5D2F77;
     --pink: #E45A92;
     --peach: #FFACAC;
     --white: #ffffff;
-    --light-bg: #f9f4fb; /* Very light purple tint for background */
+    --light-bg: #f9f4fb; /* tint */
 }
 
 /* GENERAL RESET */
@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'Segoe UI', sans-serif; /* Modern font */
+    font-family: 'Poppins', 'Segoe UI', sans-serif; 
 }
 
 body {
@@ -36,9 +36,9 @@ body {
 }
 
 .nav-logo {
-    height: 50px; /* Menü yüksekliğimiz 70px idi, logo 50px iyi durur */
-    width: auto; /* Genişliği otomatik ayarla, resim bozulmasın */
-    vertical-align: middle; /* Dikey olarak ortala */
+    height: 50px; /* Menü yüksekliği */
+    width: auto; 
+    vertical-align: middle; 
 }
 
 .nav-links {
@@ -70,7 +70,7 @@ body {
     background-color: var(--purple);
     min-width: 180px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    top: 110%; /* Adjusted position */
+    top: 110%; 
     border-radius: 8px;
     overflow: hidden;
     z-index: 999;
@@ -85,7 +85,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: var(--pink); /* Active item color */
+    background-color: var(--pink); 
     color: white;
 }
 
@@ -95,7 +95,6 @@ body {
 
 /* HERO SECTION */
 .hero {
-    /* You can replace this URL with your own image later */
     background-image: url('images/sm_bg.jpg');
     height: 85vh;
     background-size: cover;
@@ -107,7 +106,6 @@ body {
     position: relative;
 }
 
-/* Overlay to make text pop on any image */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -141,7 +139,7 @@ body {
     background-color: var(--pink);
     color: white;
     text-decoration: none;
-    border-radius: 30px; /* Rounded button */
+    border-radius: 30px; 
     font-weight: bold;
     font-size: 1.1rem;
     transition: all 0.3s ease;
@@ -154,7 +152,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* CARDS SECTION */
+/* CARDS */
 .container {
     display: flex;
     justify-content: center;
@@ -211,25 +209,25 @@ footer {
     color: var(--pink);
 }
 
-/* GİRİŞ BUTONU TASARIMI */
+/*signup*/
+
 .login-btn {
-    background-color: var(--pink); /* Senin pembe rengin */
+    background-color: var(--pink); 
     padding: 8px 25px !important; /* !important diğer ayarları ezer, kutu yapar */
-    border-radius: 25px; /* Kenarları yuvarlar */
+    border-radius: 25px; 
     color: white !important;
     font-weight: bold;
-    border: 2px solid var(--pink); /* Kenarlık */
+    border: 2px solid var(--pink); 
     transition: 0.3s;
-    margin-left: 10px; /* Contact yazısından biraz uzaklaşsın */
+    margin-left: 10px; 
 }
 
-/* Mouse ile üzerine gelince içi boşalsın, havalı durur */
 .login-btn:hover {
-    background-color: transparent; /* Arka planı şeffaf yap */
-    color: var(--pink) !important; /* Yazıyı pembe yap */
+    background-color: transparent; 
+    color: var(--pink) !important; 
 }
 
-/* FOOTERDAKİ İLETİŞİM BUTONU */
+/* contact*/
 .footer-contact-btn {
     background-color: transparent;
     border: 2px solid var(--peach);
@@ -238,7 +236,7 @@ footer {
     border-radius: 20px;
     font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 15px; /* Yazının üstünde boşluk olsun */
+    margin-bottom: 15px; 
     transition: 0.3s;
 }
 
@@ -248,26 +246,26 @@ footer {
     transform: scale(1.05);
 }
 
-/* POP-UP ARKAPLANI (Bulanıklaştırma Kısmı) */
+/* POP-UP bg */
 .modal-overlay {
-    display: none; /* Başlangıçta gizli */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(62, 30, 104, 0.6); /* Yarı saydam mor */
-    backdrop-filter: blur(8px); /* İŞTE SİHİR BURADA: Arkayı buzlu cam yapar */
-    z-index: 2000; /* Her şeyin üstünde olsun */
+    background-color: rgba(62, 30, 104, 0.6); 
+    backdrop-filter: blur(8px); 
+    z-index: 2000; 
     animation: fadeIn 0.3s;
 }
 
-/* POP-UP KUTUSU */
+/* POP-UP BOX */
 .modal-content {
     background-color: white;
     width: 90%;
     max-width: 400px;
-    margin: 10% auto; /* Ortala */
+    margin: 10% auto;
     padding: 30px;
     border-radius: 15px;
     position: relative;
@@ -276,7 +274,7 @@ footer {
     animation: slideDown 0.3s;
 }
 
-/* Form Elemanları */
+/* Form */
 .modal-content h2 {
     color: var(--dark-purple);
     margin-bottom: 20px;
@@ -309,7 +307,6 @@ footer {
     background-color: var(--pink);
 }
 
-/* Kapatma (X) Butonu */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -323,7 +320,7 @@ footer {
     color: var(--pink);
 }
 
-/* Açılış Animasyonları */
+/* Opening Animation */
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
