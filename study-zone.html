@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/sm_logo.png" type="image/png">
+    <title>StudyMao | Student Zone</title>
+    <link rel="stylesheet" href="main-menu-style.css">
+    <link rel="stylesheet" href="study-zone-style.css">
+</head>
+<body class="dashboard-page"> 
+
+    <nav class="navbar">
+        <div class="logo"><img src="images/sm_logo.png" class="nav-logo"></div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Might Useful ▼</a>
+                <div class="dropdown-content">
+                    <a href="https://www.ilovepdf.com" target="_blank">PDF Converter</a>
+                    <a href="https://open.spotify.com" target="_blank">Spotify</a>
+                    <a href="https://www.youtube.com" target="_blank">Youtube</a>
+                    <a href="https://www.google.com" target="_blank">Google</a>
+                </div>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            
+            <li><a href="index.html" style="color: #ffb7c5;">Log Out</a></li> 
+        </ul>
+    </nav>
+
+    <div id="welcome-popup" class="popup-overlay"> 
+        <div class="popup-box"> <h1>  ⋆｡‧˚ʚ Hello! ɞ˚‧｡⋆</h1>
+            
+            <p>Are you ready to study?</p>
+            
+            <button onclick="derseBasla()" class="start-btn">MEOW! Let's Go!</button> </div>
+    </div>
+
+    <div id="main-desk" class="desk-content"> 
+        <button class="menu-toggle-btn" onclick="menuyuAcKapa()">Tools 🐾</button> 
+        <div id="side-panel" class="side-panel"> 
+            <div class="panel-header"> <h3>App Store 📦</h3>
+                <span class="close-icon" onclick="menuyuAcKapa()">✖</span> </div>
+
+            <div class="app-list"> <button class="app-btn" onclick="pomoWidgetAc()"> 🍅 <br> Pomodoro
+                </button>
+
+                <button class="app-btn" onclick="calcWidgetAc()">
+                    🧮 <br> Calculator
+                </button>
+
+                <button class="app-btn" onclick="noteWidgetAc()">
+                    📝 <br> Notes
+                </button>
+                <button class="app-btn" onclick="todoWidgetAc()">
+                    ✅ <br> To-Do
+                </button>
+                <button class="app-btn" onclick="photoWidgetAc()">
+                    🖼️ <br> Photo
+                </button>
+            </div>
+        </div>
+
+        <div id="pomo-widget" class="desk-widget" style="display: none;"> 
+            <div class="widget-header" id="pomo-header"> <span>Pomodoro</span>
+                <span class="widget-close" onclick="pomoWidgetKapat()">✖</span> 
+            </div>
+            
+            <div class="timer-display" id="pomodoro-timer">25:00</div> <div class="timer-controls"> 
+                <button onclick="baslat()">▶</button>
+                <button onclick="sifirla()">🔄</button>
+            </div>
+        </div>
+
+        <div id="calc-widget" class="desk-widget" style="display: none;">
+            <div class="widget-header" id="calc-header">
+                <span>Calculator</span>
+                <span class="widget-close" onclick="calcWidgetKapat()">✖</span>
+            </div>
+    
+            <input type="text" id="calc-display" readonly placeholder="0"> 
+            <div class="calc-keys"> 
+                <button onclick="calcYaz('7')">7</button>
+                <button onclick="calcYaz('8')">8</button>
+                <button onclick="calcYaz('9')">9</button>
+                <button onclick="calcYaz('/')" class="operator">÷</button> <button onclick="calcYaz('4')">4</button>
+                <button onclick="calcYaz('5')">5</button>
+                <button onclick="calcYaz('6')">6</button>
+                <button onclick="calcYaz('*')" class="operator">×</button>
+        
+                <button onclick="calcYaz('1')">1</button>
+                <button onclick="calcYaz('2')">2</button>
+                <button onclick="calcYaz('3')">3</button>
+                <button onclick="calcYaz('-')" class="operator">-</button>
+        
+                <button onclick="calcTemizle()" class="red">C</button> <button onclick="calcYaz('0')">0</button>
+                <button onclick="calcHesapla()" class="green">=</button> <button onclick="calcYaz('+')" class="operator">+</button>
+            </div>
+        </div>
+
+        <div id="notes-widget" class="desk-widget" style="display: none;">
+            <div class="widget-header" id="notes-header">
+                <span>Quick Notes</span>
+                <span class="widget-close" onclick="noteWidgetKapat()">✖</span>
+            </div>
+    
+            <textarea id="note-paper" placeholder="Meow here..." oninput="notKontrol(this)"></textarea> <div class="note-footer"> <span id="word-count">0</span> / 1000 Words
+            </div>
+        </div>
+
+        <div id="todo-widget" class="desk-widget" style="display: none;">
+            <div class="widget-header" id="todo-header">
+                <span>To-Do List</span>
+                <span class="widget-close" onclick="todoWidgetKapat()">✖</span>
+            </div>
+    
+            <div class="task-input-area"> <input type="text" id="new-task-input" placeholder="What are you going to meow today?">
+                <button onclick="gorevEkle()">ADD</button>
+            </div>
+    
+            <ul id="todo-list"> <li class="task-item"> <input type="checkbox" onclick="gorevCiz(this)">
+                    <span>Meowsion 1</span>
+                    <span class="delete-btn" onclick="gorevSil(this)">🗑️</span> </li>
+            </ul>
+        </div>
+
+        <div id="photo-widget" class="desk-widget" style="display: none;">
+            <div class="widget-header">
+                <span>Photo Frame</span>
+                <span class="widget-close" onclick="photoWidgetKapat()">✖</span>
+            </div>
+    
+            <div class="photo-controls"> <label for="photo-upload-input" class="file-upload-btn">Upload Photo 📂</label>
+                <input type="file" id="photo-upload-input" accept="image/*" hidden onchange="fotoyuGoster(this)">
+            </div>
+    
+            <div class="photo-stage"> <img id="displayed-photo" src="" style="display: none;">
+                <p id="photo-placeholder">Choose a photo...</p>
+            </div>
+
+            <div class="resize-handle">↘</div> </div>
+
+    </div>
+
+    <div style="text-align: center; padding: 100px; color: var(--dark-purple);">
+        <h1>Welcome back, Student! 🎓</h1>
+        <p>Here is your study dashboard.</p>
+    </div>
+
+    <script src="study-zone.js"></script>
+</body>
+</html>

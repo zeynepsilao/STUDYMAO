@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/sm_logo.png" type="image/png">
+    <title>StudyMao | Sign Up</title>
+    <link rel="stylesheet" href="main-menu-style.css">
+    <link rel="stylesheet" href="signup-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="color:white; text-decoration:none;">StudyMao</a></div>
+    </nav>
+
+    <div style="text-align: center; padding: 100px;">
+        <h1>Join the Community</h1>
+        <p>Please sign up to access study materials.</p>
+        <button onclick="simulateLogin()" class="btn" style="margin-top:20px;">Create Account & Login</button>
+    </div>
+
+    <script>
+        // Bu kod sahte bir giriş işlemi yapar
+        function simulateLogin() {
+            localStorage.setItem('isLoggedIn', 'true'); // Tarayıcıya "Giriş yapıldı" notu bırakır
+            alert("Account Created! Redirecting...");
+            window.location.href = 'study-zone.html'; // Ders alanına atar
+        }
+    </script>
+</body>
+</html>

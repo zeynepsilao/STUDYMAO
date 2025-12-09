@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMao | Gallery</title>
+    <link rel="icon" href="images/sm_logo.png" type="image/png">
+    <link rel="stylesheet" href="main-menu-style.css">
+    <link rel="stylesheet" href="gallery-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/sm_logo.png" alt="StudyMao Logo" class="nav-logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#">Might Useful <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="https://www.ilovepdf.com/" target="_blank">PDF Converter</a>
+                    <a href="https://open.spotify.com" target="_blank">Spotify</a>
+                    <a href="https://youtube.com" target="_blank">Youtube</a>
+                    <a href="https://google.com" target="_blank">Google</a>
+                </div>
+            </li>
+
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="#" class="login-btn">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <div class="gallery-header">
+        <h1>ᓚᘏᗢ ♡ Meow Zone ♡ ᗢᘏᓗ</h1>
+        <p>⊹₊˚‧︵‿₊୨ Motivating silly kitties ୧₊‿︵‧˚₊⊹</p>
+    </div>
+
+    <section class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/736x/43/b8/f7/43b8f757efbe31ed48e6875165f3ee5d.jpg" alt="Silly Kitty 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/1200x/8d/7c/24/8d7c24cb806adcea8eab0bbbf56ba283.jpg" alt="Silly Kitty 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/736x/0e/48/c7/0e48c7aa15d2c534ef7e408257c095ef.jpg" alt="Silly Kitty 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/1200x/47/56/4b/47564b00412ef9b869b7209612feafc5.jpg" alt="Silly Kitty 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/736x/5c/46/c7/5c46c71387b17413cbd54c8595e254cb.jpg" alt="Silly Kitty 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/1200x/7e/c5/08/7ec5086714ab7ff4de27ac3bc67c2e51.jpg" alt="Silly Kitty 6">
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

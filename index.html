@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMao | Learning Platform</title>
+    <link rel="icon" href="images/sm_logo.png" type="image/png">
+    <link rel="stylesheet" href="main-menu-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/sm_logo.png" alt="StudyMao Logo" class="nav-logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            
+            <li class="dropdown">
+                <a href="#">Might Useful <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="https://www.ilovepdf.com/" target="_blank">PDF Converter</a>
+                    <a href="https://open.spotify.com" target="_blank">Spotify</a>
+                    <a href="https://youtube.com" target="_blank">Youtube</a>
+                    <a href="https://google.com" target="_blank">Google</a>
+                </div>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" class="login-btn">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div> <div class="hero-content">
+            <h1>Unlock Your True Potential</h1>
+            <p>Access the meowest study materials, notes, and guides with StudyMao.</p>
+            <button id="getStartedBtn" class="btn">Get Started</button>
+        </div>
+    </header>
+
+    <section id="features" class="container">
+        <div class="card">
+            <i class="fas fa-clock"></i>
+            <h2>Time Management</h2>
+            <p>Learn how to manage your time efficiently.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-book-open"></i>
+            <h2>Effective Studying</h2>
+            <p>Discover the secrets of perfect study methods.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-brain"></i>
+            <h2>Active Recall</h2>
+            <p>Boost your memory with scientifically proven methods.</p>
+        </div>
+    </section>
+
+    <footer>
+        <button class="footer-contact-btn" onclick="openModal()">Contact Us</button>
+
+        <p>&copy; 2025 StudyMao. All Rights Reserved.</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Send Message</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Write your message here..." rows="4" required></textarea>
+                <button type="submit" class="send-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main-menu.js"></script>
+</body>
+</html>
