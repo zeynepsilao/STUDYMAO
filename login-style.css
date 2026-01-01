@@ -1,0 +1,78 @@
+/* login.css - Sadece giriş sayfası tasarımları */
+
+/* Arka Plan (Sayfa ortalama) */
+.login-wrapper {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/sm_bg.jpg'); /* Arka plan resmi */
+    background-size: cover;
+    background-position: center 100%;
+}
+
+/* Beyaz Kart Kutusu */
+.login-card {
+    background: white;
+    max-width: 400px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-top: 5px solid var(--pink); /* main-menu-style.css'ten gelen değişken */
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.login-card h2 {
+    color: var(--dark-purple);
+    margin-bottom: 20px;
+}
+
+/* Form Girişleri (Inputlar) */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--pink);
+    outline: none;
+    background: white;
+}
+
+/* Giriş Butonu */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--dark-purple);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: var(--pink);
+    transform: translateY(-2px);
+}
