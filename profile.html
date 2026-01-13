@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudyMao | Profile Settings</title>
+    <link rel="icon" href="images/sm_logo.png">
+    
+    <link rel="stylesheet" href="main-menu-style.css">
+    <link rel="stylesheet" href="profile.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/sm_logo.png" class="nav-logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="study-zone.html">Study Zone</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="profile-card">
+            <div class="profile-img-container">
+                <img src="https://i.pinimg.com/1200x/fb/5a/be/fb5abe50d1bed080083f9d07c66f6e46.jpg" id="profilePic">
+            </div>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            <button class="change-photo-btn" onclick="document.getElementById('fileInput').click()">
+                <i class="fas fa-camera"></i> Change Photo
+            </button>
+            <h2 id="userNameDisplay">Student Name</h2>
+            <p>StudyMao Member</p>
+        </div>
+
+        <div class="settings-card">
+            <h2 style="color: var(--dark-purple); margin-bottom: 20px;">Profile Settings</h2>
+            <form id="updateForm">
+                <div class="form-group">
+                    <label>Display Name</label>
+                    <input type="text" id="nameInput" placeholder="Your Name" value="John Pork">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="meow@studymao.com">
+                </div>
+                <div class="form-group">
+                    <label>New Password</label>
+                    <input type="password" placeholder="******">
+                </div>
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+
+</body>
+</html>
