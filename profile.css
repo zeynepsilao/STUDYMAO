@@ -1,0 +1,103 @@
+body {
+    background-color: #f4f0f6;
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* PROFİL KARTI */
+.profile-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    border-top: 5px solid var(--pink);
+}
+
+.profile-img-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--peach);
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fotoğraf Değiştir */
+.change-photo-btn {
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.change-photo-btn:hover {
+    background-color: var(--pink);
+}
+
+/* SAĞ TARAFTAKİ AYARLAR KUTUSU */
+.settings-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    flex: 2; /* Bu kutu diğerinden daha geniş olsun */
+    min-width: 300px;
+}
+
+/* Form Elemanları */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fbfbfb;
+}
+
+/* Kaydet Butonu */
+.save-btn {
+    background-color: var(--dark-purple);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background-color: var(--pink);
+}
