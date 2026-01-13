@@ -32,7 +32,8 @@ body {
     box-shadow: 0 4px 10px rgba(62, 30, 104, 0.3);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    overflow: visible !important;
+    z-index: 9999;
 }
 
 .nav-logo {
@@ -60,7 +61,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--peach); /* Hover color */
+    color: var(--peach);
 }
 
 /* DROPDOWN MENU */
@@ -73,7 +74,7 @@ body {
     top: 110%; 
     border-radius: 8px;
     overflow: hidden;
-    z-index: 999;
+    z-index: 10000;
 }
 
 .dropdown-content a {
@@ -93,7 +94,7 @@ body {
     display: block;
 }
 
-/* HERO SECTION */
+/* HEROlar */
 .hero {
     background-image: url('images/sm_bg.jpg');
     height: 85vh;
@@ -133,7 +134,7 @@ body {
     color: var(--peach);
 }
 
-/* BUTTON DESIGN */
+/* Buton */
 .btn {
     padding: 12px 35px;
     background-color: var(--pink);
@@ -152,7 +153,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* CARDS */
+/* kartlar */
 .container {
     display: flex;
     justify-content: center;
