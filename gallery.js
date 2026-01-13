@@ -9,7 +9,7 @@ galleryImages.forEach(image => {
     image.addEventListener('click', () => {
         const imgSrc = image.src;
         lightboxImg.src = imgSrc;
-        lightbox.style.display = 'flex';// otalamak icin flex kullanılır
+        lightbox.style.display = 'flex';// ortalamak icin
     });
 });
 
