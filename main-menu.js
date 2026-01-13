@@ -19,7 +19,7 @@ window.onclick = function(event) {
 
 // fake message
 document.getElementById("contactForm").addEventListener("submit", function(event){
-    event.preventDefault(); //sayfa yenilenmesin
+    event.preventDefault();
     alert("Message Sent! We will get back to you soon."); 
     closeModal(); 
 });
@@ -47,44 +47,57 @@ if (startBtn) {
 // Sayfa yüklendiğinde çalışır
 document.addEventListener("DOMContentLoaded", function() {
     updateProfileMenu();
+    const startBtn = document.getElementById('getStartedBtn');
+    if (startBtn) {
+        startBtn.addEventListener('click', function() {
+            const userStatus = localStorage.getItem('isLoggedIn');
+            if (userStatus === 'true') {
+                window.location.href = 'study-zone.html';
+            } else {
+                window.location.href = 'signup.html';
+            }
+        });
+    }
 });
 
 function updateProfileMenu() {
     const profileDropdown = document.getElementById("profileDropdown");
-    const userStatus = localStorage.getItem('isLoggedIn'); // Hafızaya bak
+    if (!profileDropdown) return;
+    const userStatus = localStorage.getItem('isLoggedIn'); 
 
     // Menüyü temizle
     profileDropdown.innerHTML = "";
 
     if (userStatus === 'true') {
-        // DURUM A: KULLANICI GİRİŞ YAPMIŞ
-        // Profilim ve Çıkış Yap seçeneklerini ekle
+        // --- GİRİŞ YAPMIŞ KULLANICI MENÜSÜ ---
+        // Study Zone 
+        const studyLink = document.createElement("a");
+        studyLink.href = "study-zone.html";
+        studyLink.innerHTML = '<i class="fas fa-brain"></i> Study Zone';
         
-        // 1. Profilim Linki (Study Zone'a gider)
+        // 2. Profile Settings
         const profileLink = document.createElement("a");
-        profileLink.href = "study-zone.html";
-        profileLink.innerHTML = '<i class="fas fa-id-card"></i> My Dashboard';
+        profileLink.href = "profile.html"; // Yeni sayfaya gider
+        profileLink.innerHTML = '<i class="fas fa-user-cog"></i> Profile Settings';
         
-        // 2. Çıkış Yap Butonu
+        // 3. Çıkış Yap
         const logoutLink = document.createElement("a");
         logoutLink.href = "#";
         logoutLink.innerHTML = '<i class="fas fa-sign-out-alt"></i> Log Out';
         logoutLink.onclick = function() {
-            logoutUser(); // Çıkış fonksiyonunu çağır
+            logoutUser();
         };
 
-        // Menüye ekle
+        // Hepsini menüye ekle
+        profileDropdown.appendChild(studyLink);
         profileDropdown.appendChild(profileLink);
         profileDropdown.appendChild(logoutLink);
 
     } else {
-        // DURUM B: MİSAFİR (GİRİŞ YAPMAMIŞ)
-        // Giriş Yap / Kayıt Ol seçeneğini ekle
-        
+        // --- MİSAFİR MENÜSÜ ---
         const loginLink = document.createElement("a");
-        loginLink.href = "login.html"; // Yeni yapacağımız giriş sayfası
+        loginLink.href = "login.html";
         loginLink.innerHTML = '<i class="fas fa-sign-in-alt"></i> Sign In / Sign Up';
-        
         profileDropdown.appendChild(loginLink);
     }
 }
