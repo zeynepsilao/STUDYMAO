@@ -1,17 +1,14 @@
-/* login.css - Sadece giriş sayfası tasarımları */
-
-/* Arka Plan (Sayfa ortalama) */
+/* Arka Plan */
 .login-wrapper {
     height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('images/sm_bg.jpg'); /* Arka plan resmi */
+    background: url('images/sm_bg.jpg');
     background-size: cover;
     background-position: center 100%;
 }
 
-/* Beyaz Kart Kutusu */
 .login-card {
     background: white;
     max-width: 400px;
@@ -29,7 +26,7 @@
     margin-bottom: 20px;
 }
 
-/* Form Girişleri (Inputlar) */
+/* Inputlar*/
 .form-group {
     text-align: left;
     margin-bottom: 15px;
@@ -57,7 +54,6 @@
     background: white;
 }
 
-/* Giriş Butonu */
 .submit-btn {
     width: 100%;
     padding: 12px;
