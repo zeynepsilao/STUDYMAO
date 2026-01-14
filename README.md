@@ -27,3 +27,6 @@ This dashboard includes several interactive, draggable widgets:
 1.  Clone this repository or download the files.
 2.  Open `index.html` in your web browser.
 3.  Click **"MEOW! Let's Go!"** to enter your study zone.
+
+### Video Link:
+https://drive.google.com/file/d/1oNBCe8lc19q9MXGyqeetpy41VG1VOj5c/view?usp=sharing
